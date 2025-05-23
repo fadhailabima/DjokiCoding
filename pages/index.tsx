@@ -1,20 +1,20 @@
-import ButtonLink from 'components/atoms/Button/ButtonLink'
-import LineDivider from 'components/atoms/LineDivider'
-import FeatureCard from 'components/molecules/Card/FeatureCard'
-import PageSentence from 'components/molecules/PageSentence'
-import PricingCard from 'components/molecules/Card/PricingCard'
-import ProjectCard from 'components/molecules/Card/ProjectCard'
-import SectionSentence from 'components/molecules/SectionSentence'
-import LogoList from 'components/organisms/LogoList'
-import TestimonialList from 'components/organisms/TestimonialList'
-import PageTemplate from 'components/templates/PageTemplate'
-import Image from 'next/image'
-import React from 'react'
-import { FiFigma, FiCode, FiBox } from 'react-icons/fi'
+import ButtonLink from "components/atoms/Button/ButtonLink";
+import LineDivider from "components/atoms/LineDivider";
+import FeatureCard from "components/molecules/Card/FeatureCard";
+import PageSentence from "components/molecules/PageSentence";
+import PricingCard from "components/molecules/Card/PricingCard";
+import ProjectCard from "components/molecules/Card/ProjectCard";
+import SectionSentence from "components/molecules/SectionSentence";
+import LogoList from "components/organisms/LogoList";
+import TestimonialList from "components/organisms/TestimonialList";
+import PageTemplate from "components/templates/PageTemplate";
+import Image from "next/image";
+import React from "react";
+import { FiFigma, FiCode, FiBox } from "react-icons/fi";
 const Home = () => {
   return (
     <>
-      <PageTemplate title="Home - Collosal">
+      <PageTemplate title="Home - DjokiCoding">
         {/* Banner Section */}
         <section
           className="flex flex-col gap-10 items-center"
@@ -22,9 +22,9 @@ const Home = () => {
         >
           <div className="w-10/12 md:w-8/12 text-center">
             <PageSentence
-              title="We Design. We Develop. We Ship. In The Same Day."
-              description="We are committed to not making clients wait. We will deliver the work as quickly as possible. Even on the same day. Even so, we do not reduce the quality of our work."
-              badge="CLIENT-DEVELOPMENT-DRIVEN"
+              title="Don't Stress About IT Tasks, DjokiCoding is Here to Help!"
+              description="We prioritize speed, ensuring clients don't wait. We'll deliver your work as quickly as possible, even by the end of the day, all while maintaining our high quality standards."
+              badge="Ready to Assist You"
             />
           </div>
           <div className="flex flex-col gap-6 sm:flex-row w-full sm:w-fit">
@@ -67,7 +67,7 @@ const Home = () => {
         <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2">
           <aside className="w-full h-[400px] relative" data-aos="fade-right">
             <Image
-              src={'/images/how-we-work-illustration.svg'}
+              src={"/images/how-we-work-illustration.svg"}
               layout="fill"
               objectFit="fill"
               alt="Structured plan"
@@ -107,7 +107,7 @@ const Home = () => {
             data-aos="fade-left"
           >
             <Image
-              src={'/images/team-illustration.svg'}
+              src={"/images/team-illustration.svg"}
               layout="fill"
               objectFit="fill"
               alt="Code editor and UI Editing popup"
@@ -159,10 +159,10 @@ const Home = () => {
                 price="1200$"
                 title="UI Design"
                 features={[
-                  '10 design pages',
-                  'Well-documented',
-                  '4 revisions',
-                  '$100/additional page',
+                  "10 design pages",
+                  "Well-documented",
+                  "4 revisions",
+                  "$100/additional page",
                 ]}
               />
             </div>
@@ -171,10 +171,10 @@ const Home = () => {
                 price="5000$"
                 title="Development"
                 features={[
-                  'Web & Mobile',
-                  'Well-documented',
-                  '8 revisions',
-                  '$1000/additional page',
+                  "Web & Mobile",
+                  "Well-documented",
+                  "8 revisions",
+                  "$1000/additional page",
                 ]}
               />
             </div>
@@ -183,10 +183,10 @@ const Home = () => {
                 price="3000$"
                 title="Maintenance"
                 features={[
-                  'Daily backup',
-                  '3 hours of maintenance',
-                  'Including fixing',
-                  '$50/additional hour',
+                  "Daily backup",
+                  "3 hours of maintenance",
+                  "Including fixing",
+                  "$50/additional hour",
                 ]}
               />
             </div>
@@ -194,7 +194,10 @@ const Home = () => {
         </section>
         {/* Testimonial */}
         <section className="flex flex-col gap-16 items-center">
-          <div className="text-center sm:w-10/12 md:w-8/12 lg:w-6/12" data-aos="zoom-in-up">
+          <div
+            className="text-center sm:w-10/12 md:w-8/12 lg:w-6/12"
+            data-aos="zoom-in-up"
+          >
             <SectionSentence
               title="What do our clients say that we never let down?"
               badge="TESTIMONIAL"
@@ -206,7 +209,7 @@ const Home = () => {
         </section>
       </PageTemplate>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
