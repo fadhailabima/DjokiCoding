@@ -16,33 +16,33 @@ const LogoList = () => {
         </div>
         <div className="">
           <Image
-            src={'/images/forbes-logo.svg'}
+            src={'/images/nextjs-icon.svg'}
             width={120}
-            height="36"
+            height="46"
             alt="forbes logo"
           />
         </div>
         <div className="">
           <Image
-            src={'/images/google-logo.svg'}
+            src={'/images/expressjs-ar21.svg'}
             width={120}
-            height="36"
+            height="56"
             alt="google logo"
           />
         </div>
         <div className="">
           <Image
-            src={'/images/microsoft-logo.svg'}
-            width={120}
-            height="36"
+            src={'/images/postgresql-ar21.svg'}
+            width={150}
+            height="56"
             alt="microsoft logo"
           />
         </div>
         <div className="">
           <Image
-            src={'/images/facebook-logo.svg'}
-            width={120}
-            height="36"
+            src={'/images/tensorflow-ar21.svg'}
+            width={150}
+            height="56"
             alt="facebook logo"
           />
         </div>

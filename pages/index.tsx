@@ -10,7 +10,7 @@ import TestimonialList from "components/organisms/TestimonialList";
 import PageTemplate from "components/templates/PageTemplate";
 import Image from "next/image";
 import React from "react";
-import { FiFigma, FiCode, FiBox } from "react-icons/fi";
+import { FiSettings, FiClock, FiMonitor } from "react-icons/fi";
 const Home = () => {
   return (
     <>
@@ -41,23 +41,23 @@ const Home = () => {
         <section className="grid grid-cols-1 gap-5 md:grid-cols-3 mb-16">
           <div data-aos="fade-up">
             <FeatureCard
-              title="Design"
-              description="The project interface will be designed first, our favorite tool is Figma."
-              icon={<FiFigma />}
+              title="Expert in Coding & IT Solutions"
+              description="We provide expert-level coding and IT solutions tailored to your needs."
+              icon={<FiMonitor />}
             />
           </div>
           <div data-aos="fade-up">
             <FeatureCard
-              title="Develop"
-              description="Transform design and write business logic here. Choose the technology you want."
-              icon={<FiCode />}
+              title="Custom Projects | General Tasks Made Easy"
+              description="Simplify your projects and tasks with our custom solutions and tools."
+              icon={<FiSettings />}
             />
           </div>
           <div data-aos="fade-up">
             <FeatureCard
-              title="Ship"
-              description="After the work is complete, we will send the project and all its assets to you."
-              icon={<FiBox />}
+              title="Real-time Quiz Assistance"
+              description="Get instant help and support for your quizzes in real-time."
+              icon={<FiClock />}
             />
           </div>
         </section>
