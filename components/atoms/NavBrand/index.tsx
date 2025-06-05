@@ -16,7 +16,7 @@ const NavBrand = () => {
           <div className="flex items-center w-fit h-fit">
             <Image
               src={"/images/Logo_Djoki.png"}
-              width="100px"
+              width={100}
               height={100}
               alt="company brand"
               loading="lazy"

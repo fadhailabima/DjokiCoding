@@ -65,9 +65,9 @@ const Home = () => {
         <LogoList />
         {/* How We Work */}
         <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2">
-          <aside className="w-full h-[400px] relative" data-aos="fade-right">
+          <aside className="w-full h-[500px] relative" data-aos="fade-right">
             <Image
-              src={"/images/how-we-work-illustration.svg"}
+              src={"/images/innovation.png"}
               layout="fill"
               objectFit="fill"
               alt="Structured plan"
@@ -78,9 +78,9 @@ const Home = () => {
             data-aos="fade-left"
           >
             <SectionSentence
-              title="Everything is well planned, well designed and developed wholeheartedly"
-              paragraph="Careful planning makes us confident, developed with best practices so that the project can be maintained. We always test projects before they are shipped."
-              badge="HOW WE WORK"
+              title="Bringing Your Unique Vision to Life: Our Custom Project Approach"
+              paragraph="We specialize in crafting bespoke digital solutions that align perfectly with your unique requirements. From concept to launch, we meticulously plan, design, and develop every custom project with passion and precision, ensuring it exceeds your expectations."
+              badge="PROJECT INNOVATION"
             />
           </aside>
         </section>
