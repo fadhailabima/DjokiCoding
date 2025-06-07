@@ -88,14 +88,16 @@ const Home = () => {
         <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2">
           <aside className="text-center sm:w-10/12 lg:text-left lg:w-full">
             <div className="space-y-12" data-aos="fade-right">
-              <SectionSentence
-                title="We're a team of designers, engineers and analysts"
-                paragraph="Our team consists of many creative people. We are committed to maintaining quality work as well as speed. These creative people work together to create maximum work results."
-                badge="OUR TEAM"
-              />
+              <div className="mb-4">
+                <SectionSentence
+                  title="Unlock Your Digital Business Potential with Hexecode Today!"
+                  paragraph="Unlock premium digital solutions with our expert web and app development, engineered for your ultimate experience."
+                  badge="CONTACT US"
+                />
+              </div>
               <ButtonLink
-                value="See Our Teams"
-                href="/teams"
+                value="WhattsApp Us"
+                href="https://wa.me/+6285174424245"
                 size="small"
                 color="white"
                 style="light"
@@ -103,11 +105,11 @@ const Home = () => {
             </div>
           </aside>
           <aside
-            className="w-full h-[400px] relative sm:w-8/12 lg:w-full"
+            className="w-full h-[450px] relative sm:w-8/12 lg:w-full"
             data-aos="fade-left"
           >
             <Image
-              src={"/images/team-illustration.svg"}
+              src={"/images/consult.png"}
               layout="fill"
               objectFit="fill"
               alt="Code editor and UI Editing popup"
