@@ -1,16 +1,19 @@
 import ButtonLink from "components/atoms/Button/ButtonLink";
 import LineDivider from "components/atoms/LineDivider";
 import FeatureCard from "components/molecules/Card/FeatureCard";
-import PageSentence from "components/molecules/PageSentence";
 import PricingCard from "components/molecules/Card/PricingCard";
 import ProjectCard from "components/molecules/Card/ProjectCard";
 import SectionSentence from "components/molecules/SectionSentence";
+import AchievementCard from "components/molecules/Card/AchievementCard";
 import LogoList from "components/organisms/LogoList";
 import TestimonialList from "components/organisms/TestimonialList";
+import PageSentence from "components/molecules/PageSentence";
+import FaqList from "components/organisms/FaqList";
 import PageTemplate from "components/templates/PageTemplate";
 import Image from "next/image";
 import React from "react";
 import { FiSettings, FiClock, FiMonitor } from "react-icons/fi";
+import { flushAllTraces } from "next/dist/trace";
 const Home = () => {
   return (
     <>
@@ -85,12 +88,12 @@ const Home = () => {
           </aside>
         </section>
         {/* Our Teams */}
-        <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2">
+        <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2 mb-2">
           <aside className="text-center sm:w-10/12 lg:text-left lg:w-full">
             <div className="space-y-12" data-aos="fade-right">
               <div className="mb-4">
                 <SectionSentence
-                  title="Unlock Your Digital Business Potential with Hexecode Today!"
+                  title="Unlock Your Digital Business Potential with DjokiCoding Today!"
                   paragraph="Unlock premium digital solutions with our expert web and app development, engineered for your ultimate experience."
                   badge="CONTACT US"
                 />
@@ -116,6 +119,33 @@ const Home = () => {
             />
           </aside>
         </section>
+        {/* Achievements Section */}
+        <section className="py-16 mt-2">
+          <div className="flex flex-col md:flex-row justify-around items-center gap-10 md:gap-4">
+            <div data-aos="fade-up">
+              <AchievementCard
+                imageSrc="/images/ic_project.png"
+                title="3+"
+                description="Big Projects"
+              />
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100">
+              <AchievementCard
+                imageSrc="/images/ic_customer.png"
+                title="95%"
+                description="Customer Satisfaction"
+              />
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200">
+              <AchievementCard
+                imageSrc="/images/ic_experience.png"
+                title="2+ Years"
+                description="Experience in The Industry"
+              />
+            </div>
+          </div>
+        </section>
+
         <LineDivider />
         {/* Our Projects */}
         <section className="flex flex-col gap-16 items-center">
@@ -142,6 +172,40 @@ const Home = () => {
                 bottomSquareSize="big"
               />
             </div>
+          </div>
+        </section>
+
+        <LineDivider />
+        {/* FAQ */}
+        <section className="grid grid-cols-1 place-items-center my-16">
+          <div className="w-full sm:w-10/12 md:w-8/12">
+            <div className="text-center mb-6" data-aos="zoom-in-up">
+              <PageSentence badge="FAQs" title="Frequently Asked Questions" />
+            </div>
+            <FaqList
+              faqs={[
+                {
+                  title: `What core services does DjokiCoding offer?`,
+                  description: `We specialize in custom coding projects, general IT task assistance, and real-time quiz support for coding and IT-related topics.`,
+                },
+                {
+                  title: `I have a specific coding project in mind. Can you help?`,
+                  description: `Absolutely! We excel at developing custom coding solutions tailored to your unique requirements. Let's discuss your project.`,
+                },
+                {
+                  title: `What kind of general IT tasks can DjokiCoding assist with?`,
+                  description: `We can help with a wide range of tasks, including scripting, data handling, automation, and other general technical needs. Just let us know what you need!`,
+                },
+                {
+                  title: `Tell me more about your real-time quiz assistance.`,
+                  description: `This service provides support during your quizzes by offering guidance and explanations to help you understand the concepts and find solutions.`,
+                },
+                {
+                  title: `How can I discuss my needs further or get a consultation?`,
+                  description: `You can reach us for a consultation or to discuss your specific requirements by calling us at 📞+62 851‑7442‑4245. We're happy to help!`,
+                },
+              ]}
+            />
           </div>
         </section>
       </PageTemplate>

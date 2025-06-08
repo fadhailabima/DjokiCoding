@@ -1,9 +1,11 @@
-import LineDivider from 'components/atoms/LineDivider'
-import FaqListItem, { FaqListItemProps } from 'components/molecules/FaqListItem'
-import React from 'react'
-import randomString from 'utils/randomString'
+import LineDivider from "components/atoms/LineDivider";
+import FaqListItem, {
+  FaqListItemProps,
+} from "components/molecules/FaqListItem";
+import React from "react";
+import randomString from "utils/randomString";
 interface FaqListProps {
-  faqs: FaqListItemProps[]
+  faqs: FaqListItemProps[];
 }
 const FaqList = ({ faqs }: FaqListProps) => {
   return (
@@ -14,10 +16,10 @@ const FaqList = ({ faqs }: FaqListProps) => {
             <FaqListItem title={faq.title} description={faq.description} />
             <LineDivider />
           </div>
-        )
+        );
       })}
     </div>
-  )
-}
+  );
+};
 
-export default FaqList
+export default FaqList;
