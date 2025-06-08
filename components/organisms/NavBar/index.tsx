@@ -80,7 +80,7 @@ const NavBar = () => {
                   style="light"
                   color="white"
                   size="small"
-                  href="/contact"
+                  href="#contact-us"
                 />
               </div>
             </div>

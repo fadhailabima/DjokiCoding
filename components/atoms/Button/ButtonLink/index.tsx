@@ -4,6 +4,8 @@ import React from 'react'
 
 interface ButtonLinkProps extends ButtonProps {
   href: string
+  newTab?: boolean;
+  className?: string;
 }
 
 const ButtonLink = ({
@@ -14,9 +16,16 @@ const ButtonLink = ({
   style = 'solid',
   color = 'primary',
   radius = 'rounded',
+  newTab = false, 
+  className = '',
 }: ButtonLinkProps) => {
   return (
     <Link href={href} passHref>
+      <a
+        target={newTab ? '_blank' : '_self'} 
+        rel={newTab ? 'noopener noreferrer' : undefined}
+        className={className}
+      >
         <Button
           value={value}
           color={color}
@@ -25,6 +34,7 @@ const ButtonLink = ({
           size={size}
           style={style}
         />
+      </a>
     </Link>
   )
 }

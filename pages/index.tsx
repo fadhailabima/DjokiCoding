@@ -13,7 +13,6 @@ import PageTemplate from "components/templates/PageTemplate";
 import Image from "next/image";
 import React from "react";
 import { FiSettings, FiClock, FiMonitor } from "react-icons/fi";
-import { flushAllTraces } from "next/dist/trace";
 const Home = () => {
   return (
     <>
@@ -31,12 +30,13 @@ const Home = () => {
             />
           </div>
           <div className="flex flex-col gap-6 sm:flex-row w-full sm:w-fit">
-            <ButtonLink value="Send Quote" href="/quote" />
             <ButtonLink
-              value="Learn More"
+              value="Contact-Us"
               color="white"
               style="light"
-              href="/about"
+              radius="rounded"
+              href="#contact-us"
+              className="bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg hover:shadow-xl hover:from-blue-600 hover:to-purple-600 transition-all duration-300"
             />
           </div>
         </section>
@@ -87,8 +87,11 @@ const Home = () => {
             />
           </aside>
         </section>
-        {/* Our Teams */}
-        <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2 mb-2">
+        {/* Contact Us */}
+        <section
+          id="contact-us"
+          className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2 mb-2"
+        >
           <aside className="text-center sm:w-10/12 lg:text-left lg:w-full">
             <div className="space-y-12" data-aos="fade-right">
               <div className="mb-4">
@@ -104,6 +107,7 @@ const Home = () => {
                 size="small"
                 color="white"
                 style="light"
+                newTab={true}
               />
             </div>
           </aside>
